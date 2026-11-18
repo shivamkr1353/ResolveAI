@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resolveai-agent"
+version = "1.0.0"
+description = "A terminal-based agent for customer exchanges and refunds"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+resolveai = "resolveai.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["resolveai*"]
